@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amani Hotel</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+    crossorigin="anonymous">
+    <style>
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        a {
+            text-decoration: none;
+        }
+        .main-btn {
+            font-size: 1rem;
+            font-weight: 500;
+            color: black;
+            text-transform: uppercase;
+            background-color: transparent;
+            border: 2px solid black;
+            padding: 20px 30px;
+            border-radius: 20px;
+            line-height: 2px;
+            display: inline-block;
+        }
+        .main-btn:hover {
+            background-color: black;
+            border-color: black;
+            color: white;
+        }
+
+        .navbar {
+            box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1); 
+            border-bottom: 2px solid #000; 
+            position: relative;
+            z-index: 10;
+        }
+
+        .navbar-expand-lg {
+            background-color: rgb(151, 151, 151);
+        }
+
+        .carousel-item {
+            height: 90vh; 
+            position: relative; 
+        }
+        .carousel-item img {
+            object-fit: cover; 
+            height: 100%; 
+            width: 100%; 
+        }
+        .carousel-caption {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: yellow;
+            text-shadow: 0 0 20px rgba(0, 0, 0, 0.7); 
+        }
+
+        .carousel-caption,
+        h5{
+            font-size: 90px;   
+        }
+
+        .carousel-caption,
+        p{
+            font-size: 30px;
+        }
+
+        .section {
+            padding: 60px 0;
+        }
+
+        .section,
+        h2{
+            font-size: 60px;
+        }
+
+        .card-title,
+        h5{
+            font-size: 40px;
+        }
+
+        .card-title,
+        p{
+            font-size: 25px;
+        }
+
+        .mb-3{
+            font-size: 15px;
+            
+        }
+
+        .mt-4,
+        p{
+            font-size: 15px;
+        }
+        
+        .table{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+     <!-- nav-section -->
+     <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">AMANI</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav menu-navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#aboutus">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#rooms">Rooms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#team">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#price">Price</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#contactus">Contact Us</a>
+                    </li>
+                    <li class="nav-item mt-4 mt-lg-0">
+                        <a class="main-btn mx-2" href="#">Book Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carousel Section -->
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="/assests/images/premium_photo-1675745329378-5573c360f69f.avif" class="d-block w-100" alt="Raffles Hotel">
+            <div class="carousel-caption">
+                <h5>Welcome to AMANI Hotel</h5>
+                <p>Experience luxury and comfort like never before.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="/assests/images/photo-1505693416388-ac5ce068fe85.avif" class="d-block w-100" alt="Hotel Interior">
+            <div class="carousel-caption">
+                <h5>Elegant Rooms</h5>
+                <p>Relax in our beautifully designed rooms.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/assests/images/photo-1573663520878-8c38b10264fc.avif" class="d-block w-100" alt="Luxurious Room">
+            <div class="carousel-caption">
+                <h5>Luxurious Stays</h5>
+                <p>Enjoy an unforgettable stay with us.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/assests/images/photo-1584132967334-10e028bd69f7.avif" class="d-block w-100" alt="Pool View">
+            <div class="carousel-caption">
+                <h5>Beautiful Views</h5>
+                <p>Take in the stunning views from our hotel.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- About-Section -->
+      <section id="aboutus" class="section bg-light">
+        <div class="container text-center">
+            <h2>About Us</h2>
+            <p>Welcome to Hotel Amani, where luxury meets comfort. Nestled in the heart of the city, 
+                our hotel is designed to provide an unforgettable experience for every guest. With elegantly 
+                furnished rooms, world-class amenities, and a dedicated team committed to exceptional service, 
+                we strive to create a home away from home. Whether you are here for business or leisure, our goal 
+                is to ensure your stay is both relaxing and enjoyable. Enjoy delectable dining options, a rejuvenating spa, 
+                and a stunning rooftop pool that offers breathtaking views of the skyline. At Hotel Amani, we believe in creating 
+                lasting memories, one guest at a time. Experience the perfect blend of elegance and hospitality—your sanctuary awaits.</p>
+        </div>
+    </section>
+
+    <!-- Room-section -->
+    <section id="rooms" class="section">
+        <div class="container text-center">
+            <h2>Our Rooms</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="/assests/images/pexels-photo-262048-4.jpeg" class="card-img-top" alt="Room 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Deluxe Room</h5>
+                            <p class="card-text">A spacious room with all amenities.</p>
+                            <a href="#" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="/assests/images/pexels-photo-1743229.jpeg" class="card-img-top" alt="Room 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Standard Room</h5>
+                            <p class="card-text">Comfortable and cozy for a perfect stay.</p>
+                            <a href="#" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="/assests/images/pexels-photo-3659683.webp" class="card-img-top" alt="Room 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Suite</h5>
+                            <p class="card-text">Luxurious suite with stunning views.</p>
+                            <a href="#" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>  
+
+    <!-- price -->
+
+    <section id="price" class="section bg-light">
+        <div class="container text-center">
+            <h2>Room Price</h2>
+            <p>Check our affordable rates:</p>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Room Type</th>
+                        <th scope="col">Price (per night)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Deluxe Room</td>
+                        <td>Rs.30,000</td>
+                    </tr>
+                    <tr>
+                        <td>Standard Room</td>
+                        <td>Rs.20,000</td>
+                    </tr>
+                    <tr>
+                        <td>Suite</td>
+                        <td>Rs.10,000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section">
+        <div class="container text-center">
+            <h2>Gallery</h2>
+            <div class="row gallery">
+                <div class="col-md-4">
+                    <img src="/assests/images/pexels-photo-261169.jpeg" class="img-fluid mb-4" alt="Gallery Image 1">
+                </div>
+                <div class="col-md-4">
+                    <img src="/assests/images/photo-1520250497591-112f2f40a3f4.avif" class="img-fluid mb-4" alt="Gallery Image 2">
+                </div>
+                <div class="col-md-4">
+                    <img src="/assests/images/photo-1653974123446-3eeff06fb6fb.avif" class="img-fluid mb-4" alt="Gallery Image 3">
+                </div>
+                <div class="col-md-4">
+                    <img src="/assests/images/pexels-photo-460537.jpeg" class="img-fluid mb-4" alt="Gallery Image 4">
+                </div>
+                <div class="col-md-4">
+                    <img src="/assests/images/photo-1561501900-3701fa6a0864.avif" class="img-fluid mb-4" alt="Gallery Image 5">
+                </div>
+                <div class="col-md-4">
+                    <img src="/assests/images/photo-1584132967334-10e028bd69f7.avif" class="img-fluid mb-4" alt="Gallery Image 6">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- contact-section -->
+    <section class="section bg-light">
+        <div class="container text-center">
+            <h2>Contact Us</h2>
+            <p>We'd love to hear from you! Please fill out the form below or contact us through the details provided.</p>
+            
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="name">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="3" placeholder="message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+    
+            <div class="mt-4">
+                <h4>Contact Details</h4>
+                <p><strong>Phone:</strong> +123 456 7890</p>
+                <p><strong>Email:</strong> info@amanihotel.com</p>
+                <p><strong>Address:</strong> 123 Amani St, Colombo, Sri Lanka</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+        crossorigin="anonymous">
+    </script>
+</body>
+</html>
